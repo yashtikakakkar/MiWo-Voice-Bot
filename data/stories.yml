@@ -40,7 +40,7 @@ stories:
   - intent: city_name
   - action: utter_help 
   
- - story: delhi acco other path
+- story: delhi acco other path
   steps:
   - intent: greet
   - action: utter_greet
