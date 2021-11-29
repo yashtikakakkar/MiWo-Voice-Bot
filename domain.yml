@@ -1,0 +1,120 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - searching_for_job
+  - problem_in_current_job
+  - Delhi
+  - Outside_Delhi
+  - district
+  - acco_other
+
+responses:
+  utter_greet:
+  - text: "What's your issue? - 1.Searching for a job or 2.Problems in current job or 3.Accommodation or other. Please select one of the three options." 
+  
+  utter_searching_for_job:
+  - text: "Which area are you located in? - Delhi or Outside Delhi?"
+  
+  utter_district:
+  - text: "Please tell us your district? - Central, East, North, North East, North West, South, South East, South West, West or New Delhi"
+  
+  utter_problem_in_current_job:
+  - text: "What problem are you facing with your current job employer? 1.Unpaid dues or 2.Human Rights Violation?"
+
+  utter_acco_other:
+  - text: "Which area are you located in?"
+  
+  utter_help:
+  - text: "Please contact to the following helpline number - 956873456, 469773463, 0115436, 011254564: they'll help you out!" 
+  
+  utter_national_help: 
+  - text: "Please contact to the following national helpline number - 956873456, 469773463, 0115436, 011254564: they'll help you out!" 
+  
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+  
+
+
+## -- 
+
+#entities:
+#  - name
+#  - time
+
+#forms:
+#  newsletter_form:
+#    email:
+#    - type: from_text
+
+#slots:
+#  email:
+#    type: any 
+    # this slot will not influence the predictions
+    # of the dialogue policies
+#    influence_conversation: false
+
+#  time:
+#    type: any
+#  name:
+#    type: any
+
+#actions:
+#- '...'
+#- utter_greet
+#- utter_subscribed
+#- utter_ask_time
+#- utter_name
+#- action_ask_name
+
+
+#responses:
+#  utter_ask_email:
+#  - text: What is your email address?
+
+#  utter_subscribed:
+#  - text: Check your inbox at {email} in order to finish subscribing to the newsletter!
+#  - text: You're all set! Check your inbox at {email} to confirm your subscription.
+
+#  utter_ask_time:
+#  - text: "It is {time}."
+
+#  utter_name:
+#  - text: "Name is {name}."
+
+# entities:
+#    - PERSON           # entity extracted by SpacyEntityExtractor
+#    - time             # entity extracted by DucklingEntityExtractor
+#    - membership_type  # custom entity extracted by DIETClassifier
+#    - priority         # custom entity extracted by DIETClassifier
+#    - city:            # custom entity extracted by DIETClassifier
+#        roles:
+#        - from
+#        - to
+#    - topping:         # custom entity extracted by DIETClassifier
+#        groups:
+#        - 1
+#        - 2
+#    - size:            # custom entity extracted by DIETClassifier
+#        groups:
+#        - 1
+#        - 2
