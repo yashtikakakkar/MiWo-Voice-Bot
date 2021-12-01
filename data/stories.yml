@@ -22,23 +22,60 @@ stories:
   - intent: Outside_Delhi
   - action: utter_national_help
   
-- story: problem in job path
+- story: problem in job path maternity
   steps:
   - intent: greet
   - action: utter_greet
   - intent: problem_in_current_job
   - action: utter_problem_in_current_job 
-  - intent: city_name
-  - action: utter_help 
+  - intent: law_maternity
+  - action: utter_law_maternity 
+  - intent: goodbye
+  - action: utter_goodbye
 
-- story: happy problem in job path
+- story: problem in job path wages
   steps:
   - intent: greet
   - action: utter_greet
   - intent: problem_in_current_job
   - action: utter_problem_in_current_job 
-  - intent: city_name
-  - action: utter_help 
+  - intent: law_wages
+  - action: utter_law_wages
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: problem in job path compensation
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: problem_in_current_job
+  - action: utter_problem_in_current_job 
+  - intent: law_compensation
+  - action: utter_law_compensation 
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: problem in job path remuneration
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: problem_in_current_job
+  - action: utter_problem_in_current_job 
+  - intent: law_remuneration
+  - action: utter_law_remuneration
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: problem in job path minimum wage
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: problem_in_current_job
+  - action: utter_problem_in_current_job 
+  - intent: law_minimum
+  - action: utter_law_minimum
+  - intent: goodbye
+  - action: utter_goodbye
   
 - story: delhi acco other path
   steps:
@@ -49,7 +86,9 @@ stories:
   - intent: Delhi
   - action: utter_district
   - intent: district
-  - action: utter_help
+  - action: utter_law_maternity 
+  - intent: goodbye
+  - action: utter_goodbye
   
 - story: outside acco other path
   steps:

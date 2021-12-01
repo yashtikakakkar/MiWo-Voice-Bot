@@ -117,6 +117,49 @@ nlu:
     - I need a home to live  
     - none 
     - other problem   
+
+- intent: law_maternity
+  examples: |
+    - I was pregnant and my employer removed me from the work
+    - I was on maternity leave and was not paid for that time
+    - I was pregnant and was not paid 
+    - I was on leave due to pregnancy and my employer removed me from work
+    - I was on leave due to pregnancy and employer gave me notice and no money
+
+- intent: law_wages
+  examples: |
+    - My employer paid me in invalid currency notes and is not listening
+    - My employer fired me and did not pay me for remaining days of work
+    - My employer has not paid me in a month
+    - I have not been paid my salary in a month
+    - My employer has deducted a lot of money from my salary
+    - My employer has put invalid fines on my salary
+
+- intent: law_compensation
+  examples: |
+    - I was in an accident while working but haven't been given any money for it
+    - I got a disease due to the work but haven't been paid
+    - My relative died while working and we haven't been paid
+    - My relative passed away while working and we haven't got any money
+    - I got injured while working here and my employer hasn't paid any money
+    - I need money for operation for an accident I got in while working
+
+- intent: law_remuneration
+  examples: |
+    - I am getting less pay than my co-workers
+    - I am a woman and am getting less pay than men
+    - I am getting less pay than others for the same work
+    - I am facing discrimination and not getting an equal pay
+    - I am not getting equally paid as everyone
+    - I am not being paid what was decided earlier
+
+- intent: law_minimum
+  examples: |
+    - I am not getting paid for overtime
+    - I am being forced to work extra without any pay
+    - We are getting less pay than the rate in market
+    - Employer is not paying according to the rate
+    - Employer is not paying appropriate salary according to rate
      
      
      
@@ -234,6 +277,9 @@ nlu:
     - see you later
     - thank you
     - thanks for helping!
+    - okay
+    - ok
+    - ok thanks
 
 - intent: affirm
   examples: |

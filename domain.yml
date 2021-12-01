@@ -26,7 +26,22 @@ responses:
   - text: "Please tell us your district? - Central, East, North, North East, North West, South, South East, South West, West or New Delhi"
   
   utter_problem_in_current_job:
-  - text: "What problem are you facing with your current job employer? 1.Unpaid dues or 2.Human Rights Violation?"
+  - text: "What problem are you facing with your current job?"
+
+  utter_law_maternity:
+  - text: "This issue may come under the Maternity Benefit Act. You may contact this helpline number for women for further help. Please call 1091."
+
+  utter_law_compensation:
+  - text: "This issue may come under the Employee Compensation Act. Please contact the following helpline number for assistance: "
+
+  utter_law_remuneration:
+  - text: "This issue may come under the Equal Remuneration Act. Please contact the following helpline number for assistance: "
+
+  utter_law_wages:
+  - text: "This issue may come under the Payment of Wages Act. Please contact the following helpline number for assistance: "
+
+  utter_law_minimum:
+  - text: "This issue may come under the Minimum Wages Act. Please contact the following helpline number for assistance: "
 
   utter_acco_other:
   - text: "Which area are you located in?"
@@ -44,7 +59,7 @@ responses:
   - text: "Great, carry on!"
 
   utter_goodbye:
-  - text: "Bye"
+  - text: "GoodBye, have a great day!"
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
