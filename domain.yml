@@ -3,10 +3,6 @@ version: "2.0"
 intents:
   - greet
   - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
   - bot_challenge
   - searching_for_job
   - problem_in_current_job
@@ -14,10 +10,15 @@ intents:
   - Outside_Delhi
   - district
   - acco_other
+  - law_maternity
+  - law_wages
+  - law_compensation
+  - law_remuneration
+  - law_minimum
 
 responses:
   utter_greet:
-  - text: "What's your issue? - 1.Searching for a job or 2.Problems in current job or 3.Accommodation or other. Please select one of the three options." 
+  - text: "What's your issue? : 1 - Searching for a job or 2 - Problems in current job or 3 - Accommodation or other. Please select one of the three options." 
   
   utter_searching_for_job:
   - text: "Which area are you located in? - Delhi or Outside Delhi?"
@@ -70,26 +71,21 @@ session_config:
   
 
 
-## -- 
-
-#entities:
-#  - name
-#  - time
 
 #forms:
 #  newsletter_form:
 #    email:
 #    - type: from_text
 
-#slots:
+slots:
 #  email:
 #    type: any 
     # this slot will not influence the predictions
     # of the dialogue policies
 #    influence_conversation: false
 
-#  time:
-#    type: any
+  time:
+    type: any
 #  name:
 #    type: any
 
@@ -116,9 +112,9 @@ session_config:
 #  utter_name:
 #  - text: "Name is {name}."
 
-# entities:
+entities:
 #    - PERSON           # entity extracted by SpacyEntityExtractor
-#    - time             # entity extracted by DucklingEntityExtractor
+     - time             # entity extracted by DucklingEntityExtractor
 #    - membership_type  # custom entity extracted by DIETClassifier
 #    - priority         # custom entity extracted by DIETClassifier
 #    - city:            # custom entity extracted by DIETClassifier

@@ -12,14 +12,17 @@ import pyttsx3
 
 #translator = Translator(to_lang='hi')
 
-converter = pyttsx3.init() 
-converter.setProperty('rate', 150) 
-converter.setProperty('volume', 0.7) 
+converter = pyttsx3.init("sapi5") 
+converter.setProperty('rate', 120) 
+converter.setProperty('volume', 0.8) 
 voices = converter.getProperty('voices')
 converter.setProperty('voice', voices[1].id)
   
 rec = sr.Recognizer()
 
+print("Hello, I am Miwo - your work assistant")
+converter.say("Hello, I am Miwo - your work assistant")
+converter.runAndWait()
 
 """
 converter.say("Hello, Please choose one language - Hindi or English?")
@@ -36,7 +39,7 @@ with sr.Microphone(device_index=0) as source:
 
 bot_message = ""
 
-while(bot_message != "Bye" or bot_message!='thanks'):
+while(bot_message != "Bye" or bot_message!='thanks' or bot_message != "GoodBye, have a great day!"):
     with sr.Microphone(device_index=0) as source:
         print("MiWo is Listening...")
         message = rec.listen(source)

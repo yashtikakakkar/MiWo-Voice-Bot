@@ -137,11 +137,11 @@ nlu:
 
 - intent: law_compensation
   examples: |
-    - I was in an accident while working but haven't been given any money for it
-    - I got a disease due to the work but haven't been paid
-    - My relative died while working and we haven't been paid
-    - My relative passed away while working and we haven't got any money
-    - I got injured while working here and my employer hasn't paid any money
+    - I was in an accident while working but havent been given any money for it
+    - I got a disease due to the work but havent been paid
+    - My relative died while working and we havent been paid
+    - My relative passed away while working and we havent got any money
+    - I got injured while working here and my employer hasnt paid any money
     - I need money for operation for an accident I got in while working
 
 - intent: law_remuneration
@@ -300,39 +300,6 @@ nlu:
     - no way
     - not really
 
-- intent: mood_great
-  examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
-
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
 
 - intent: bot_challenge
   examples: |
