@@ -12,7 +12,7 @@ import pyttsx3
 
 #translator = Translator(to_lang='hi')
 
-converter = pyttsx3.init("sapi5") 
+converter = pyttsx3.init() 
 converter.setProperty('rate', 120) 
 converter.setProperty('volume', 0.8) 
 voices = converter.getProperty('voices')
