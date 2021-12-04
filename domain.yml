@@ -15,10 +15,17 @@ intents:
   - law_compensation
   - law_remuneration
   - law_minimum
+  - affirm
+  - deny
+  - schemes
+  - IGNOAP
+  - AABY
+  - RSBY
+  - MGBBY
 
 responses:
   utter_greet:
-  - text: "What's your issue? : 1 - Searching for a job or 2 - Problems in current job or 3 - Accommodation or other. Please select one of the three options." 
+  - text: "What's your issue? : 1 - Searching for a job or 2 - Problems in current job or 3 - Know about Government Schemes or 4 - Accommodation or other. Please select one of the four options." 
   
   utter_searching_for_job:
   - text: "Which area are you located in? - Delhi or Outside Delhi?"
@@ -28,6 +35,24 @@ responses:
   
   utter_problem_in_current_job:
   - text: "What problem are you facing with your current job?"
+
+  utter_schemes:
+  - text: "Which government scheme do you wish to know about? Indira Gandhi National Old Age Pension Scheme, Aam Aadmi Bima Yojana, Rashtriya Swasthya Bima Yojana, or Mahatma Gandhi Bunkar Bima Yojana"
+
+  utter_IGNOAP:
+  - text: "To be eligible for Indira Gandhi National Old Age Pension Scheme you need to above the age of 60. You should not have any source of income and should be Below Poverty Line. If your age is between 60 to 79 you will receive 2 hundred rupees per month and if you are above 80 years you are eligible to receive 5 hundred rupees per month. Are you interested in this scheme?"
+
+  utter_AABY:
+  - text: "To be eligible for Aam Aadmi Bima Yojana you need to be aged between 18 and 59 years. You can Below Poverty Line or marginally above it. You should also be a part of an occupational or vocational group. Through this, your nominee will get thirty thousand rupees if you pass away due to natural causes. If it is an accidental death or a permanent total disability, an amount of seventy five thousand rupees will be given. If instead you have a partial disability, you will receive thirty seven thousand five hundred rupees. Your children will also be eligible for scholarship of one hundred rupees per month per child. Are you interested in this scheme?"
+
+  utter_MGBBY:
+  - text: "To be eligible for Mahatma Gandhi Bunkar Bima Yojana you need to earn atleast fifty percent of your earnings from handloom weaving. You should be aged between 18 and 59 and should be associated with the state handloom development corporation. Through this, your nominee will get sixty thousand rupees if you pass away due to natural causes. If it is an accidental death or a total disability, an amount of one lakh fifty thousand rupees will be given. If instead you have a partial disability, you will receive seventy five thousand rupees. Your children will also be eligible for scholarship. Are you interested in this scheme?"
+
+  utter_RSBY:
+  - text: "To be eligible for Rashtriya Swasthya Bima Yojana, you should be Below Poverty Line and your family unit should be of 5 members. You should also be a part of an occupational or vocational group. You'll be eligible for a smart card for identification purposes, a thirty thousand rupees per annum insurance for your family, hospitalization expenses for common ailments and transportation fees ranging from hundred rupees to a thousand rupees. These are subject to change according to the respective state government policies. Are you interested in this scheme?"
+
+  utter_scheme_help:
+  - text: "Please call the national helpline number xxxxxx for further steps."
 
   utter_law_maternity:
   - text: "This issue may come under the Maternity Benefit Act. You may contact this helpline number for women for further help. Please call 1091."

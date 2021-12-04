@@ -102,8 +102,8 @@ nlu:
     - South East Delhi
     - South West Delhi
     - West Delhi
-    
-- intent: acco_other
+
+- intent: schemes
   examples: |
     - 3
     - three
@@ -111,6 +111,46 @@ nlu:
     - third one
     - third
     - third option
+    - government schemes
+    - schemes
+    - I want to know about government schemes
+    - Tell me about some government schemes
+
+- intent: IGNOAP
+  examples: |
+    - Indira Gandhi
+    - Indira Gandhi National Old Age Pension Scheme
+    - Old Age Pension
+    - National Old Age Pension
+
+- intent: AABY
+  examples: |
+    - Aam Aadmi Bima Yojana
+    - Aam Aadmi Yojana
+    - Aam Aadmi
+
+- intent: RSBY
+  examples: |
+    - Rashtriya Swasthya Bima Yojana
+    - Rashtriya Swasthya
+    - Swasthya Yojana
+    - Swasthya Bima
+
+- intent: MGBBY
+  examples: |
+    - Mahatma Gandhi Bunkar Bima Yojana
+    - Mahatma Gandhi Yojana
+    - Bunkar Bima Yojana
+    - Bunkar Yojana
+
+- intent: acco_other
+  examples: |
+    - 4
+    - four
+    - option 4
+    - fourth one
+    - fourth
+    - fourth option
     - other
     - accommodation
     - I am in search of home
@@ -289,6 +329,7 @@ nlu:
     - of course
     - that sounds good
     - correct
+    - yup
 
 - intent: deny
   examples: |
@@ -299,6 +340,7 @@ nlu:
     - don't like that
     - no way
     - not really
+    - no thanks
 
 
 - intent: bot_challenge

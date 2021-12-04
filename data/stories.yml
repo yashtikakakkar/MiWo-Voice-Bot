@@ -76,6 +76,102 @@ stories:
   - action: utter_law_minimum
   - intent: goodbye
   - action: utter_goodbye
+
+- story: scheme IGNOAP yes
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: schemes
+  - action: utter_schemes
+  - intent: IGNOAP
+  - action: utter_IGNOAP
+  - intent: affirm
+  - action: utter_scheme_help
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: scheme IGNOAP no
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: schemes
+  - action: utter_schemes
+  - intent: IGNOAP
+  - action: utter_IGNOAP
+  - intent: deny
+  - action: utter_goodbye
+
+- story: scheme AABY yes
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: schemes
+  - action: utter_schemes
+  - intent: AABY
+  - action: utter_AABY
+  - intent: affirm
+  - action: utter_scheme_help
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: scheme AABY no
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: schemes
+  - action: utter_schemes
+  - intent: AABY
+  - action: utter_AABY
+  - intent: deny
+  - action: utter_goodbye
+
+- story: scheme RSBY yes
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: schemes
+  - action: utter_schemes
+  - intent: RSBY
+  - action: utter_RSBY
+  - intent: affirm
+  - action: utter_scheme_help
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: scheme RSBY no
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: schemes
+  - action: utter_schemes
+  - intent: RSBY
+  - action: utter_RSBY
+  - intent: deny
+  - action: utter_goodbye
+
+- story: scheme MGBBY yes
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: schemes
+  - action: utter_schemes
+  - intent: MGBBY
+  - action: utter_MGBBY
+  - intent: affirm
+  - action: utter_scheme_help
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: scheme MGBBY no
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: schemes
+  - action: utter_schemes
+  - intent: MGBBY
+  - action: utter_MGBBY
+  - intent: deny
+  - action: utter_goodbye
   
 - story: delhi acco other path
   steps:
