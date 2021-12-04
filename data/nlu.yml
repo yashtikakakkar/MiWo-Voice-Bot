@@ -201,6 +201,52 @@ nlu:
     - Employer is not paying according to the rate
     - Employer is not paying appropriate salary according to rate
      
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - thank you
+    - thanks for helping!
+    - okay
+    - ok
+    - ok thanks
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - yup
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - no thanks
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
      
      
      
@@ -302,50 +348,3 @@ nlu:
      
         
 
-- intent: goodbye
-  examples: |
-    - good afternoon
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
-    - thank you
-    - thanks for helping!
-    - okay
-    - ok
-    - ok thanks
-
-- intent: affirm
-  examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
-    - yup
-
-- intent: deny
-  examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
-    - no thanks
-
-
-- intent: bot_challenge
-  examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
