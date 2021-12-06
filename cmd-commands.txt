@@ -6,7 +6,9 @@ Anaconda Prompt -> Run as Administrator
 2. (base) C:\>cd Users/Sonalika/Documents
 3. (base) C:\Users\Sonalika\Documents>.\rasabot\Scripts\activate
 4. (rasabot) (base) C:\Users\Sonalika\Documents>cd A-RASA/miwo
-5. (rasabot) (base) C:\Users\Sonalika\Documents\A-RASA\MiWo>rasa run -m models --endpoints endpoints.yml --port 5002 --credentials credentials.yml (or) rasa run -m models --enable-api --cors "*" --debug
+5. (rasabot) (base) C:\Users\Sonalika\Documents\A-RASA\MiWo>rasa run -m models --endpoints endpoints.yml --port 5002 --credentials credentials.yml
+
+(rasa x) 
 
 OPEN ANOTHER TERMINAL - 
 
@@ -18,6 +20,67 @@ OPEN ANOTHER TERMINAL -
 
 1. to 4. same as above
 5. (rasabot) (base) C:\Users\Sonalika\Documents\A-RASA\MiWo>python Voice_bot.py run
+
+
+OPEN ANOTHER TERMINAL - 
+
+1. to 4. same as above
+5. (rasabot) (base) C:\Users\Sonalika\Documents\A-RASA\MiWo>docker run -p 8000:8000 rasa/duckling
+
+
+
+
+How to extract the information from the excel sheet and display in the output
+
+Add the given data to nlu.md to accept what user says,
+
+## intent:ask_info
+- list out the [email]{"entity":"column","value":"email"} of the user who's occupation is [trainer]{"entity":"occup","value":"trainer"}
+- list out the [name]{"entity":"column","value":"name"} of the user who's occupation is [doctor]{"entity":"occup","value":"doctor"}
+- tell me the [mobile number]{"entity":"column","value":"number"} of the user whose occupation is [software developer]{"entity":"occup","value":"software developer"}
+this is intent with the entities that will be extracted from the user input based on which information will be extracted from the user’s existing excel sheet. Add the intent name and entities in the domain file to register them.
+
+intents:
+- ask_info
+entities:
+- column
+- occup
+Based on these entities extracted, create an action that will be called when the user will ask for the information to extract.
+Add the given line of code in to the actions.py script to extract the data,
+
+class ActionFetchData(Action):
+def name(self) -> Text:
+    return "action_fetch_data"
+
+def run(self, dispatcher: CollectingDispatcher,
+        tracker: Tracker,
+        domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+    output=FetchData(tracker.latest_message['entities'][0]['value'],
+                     tracker.latest_message['entities'][1]['value'])
+    dispatcher.utter_message(text="This is the data that you asked for, \n{}".format(",".join(output)))
+
+    return []
+In the above run method, you will see a function is called which will be created in the other script to read the data from the excel sheet,
+
+def FetchData(column,occupation):
+    if os.path.isfile("user_data.xlsx"):
+        df=pd.read_excel("user_data.xlsx")
+        data=df[column][df["occupation"]==occupation]
+        return data.to_list()
+    else:
+        return ["There is no data. "]
+Once, you have created the function for reading the data as per the user input. Also, add the stories in the stories.md file so as to follow the path,
+
+## fetch info
+* ask_info{"column":"email","occup":"trainer"}
+  - action_fetch_data
+
+ 
+Also add this action name to domain file to register it,
+
+actions:
+- action_fetch_data
+
 
 
 

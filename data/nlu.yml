@@ -92,24 +92,24 @@ nlu:
     
 - intent: district
   examples: |
-    - New Delhi
-    - Central Delhi
-    - East Delhi
-    - North Delhi
-    - North East Delhi
-    - North West Delhi
-    - South Delhi
-    - South East Delhi
-    - South West Delhi
-    - West Delhi
+    - [district]{"entity":"column","value":"district"}
+    - [district]{"entity":"column","value":"district"} Delhi
+#    - New Delhi
+#    - Central Delhi
+#    - East Delhi
+#    - North Delhi
+#    - North East Delhi
+#    - North West Delhi
+#    - South Delhi
+#    - South East Delhi
+#    - South West Delhi
+#    - West Delhi
 
-- intent: csv
-  examples: |
-    - file
-    - q_csv
-    - TEST
-    - test
-    - Test    
+#- intent: csv
+#  examples: |
+#   - file
+#   - test
+#   - Test    
 
 - intent: schemes
   examples: |
