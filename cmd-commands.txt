@@ -6,12 +6,12 @@ Anaconda Prompt -> Run as Administrator
 2. (base) C:\>cd Users/Sonalika/Documents
 3. (base) C:\Users\Sonalika\Documents>.\rasabot\Scripts\activate
 4. (rasabot) (base) C:\Users\Sonalika\Documents>cd A-RASA/miwo
-5. (rasabot) (base) C:\Users\Sonalika\Documents\A-RASA\MiWo>rasa run -m models --endpoints endpoints.yml --port 5002 --credentials credentials.yml
+5. (rasabot) (base) C:\Users\Sonalika\Documents\A-RASA\MiWo>rasa run -m models --endpoints endpoints.yml --port 5002 --credentials credentials.yml (or) rasa run -m models --enable-api --cors "*" --debug
 
 OPEN ANOTHER TERMINAL - 
 
 1. to 4. same as above
-5. (rasabot) (base) C:\Users\Sonalika\Documents\A-RASA\MiWo>rasa run actions
+5. (rasabot) (base) C:\Users\Sonalika\Documents\A-RASA\MiWo>python -m rasa_sdk --actions actions
 
 
 OPEN ANOTHER TERMINAL - 

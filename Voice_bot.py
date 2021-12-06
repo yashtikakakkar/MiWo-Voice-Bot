@@ -39,7 +39,7 @@ with sr.Microphone(device_index=0) as source:
 
 bot_message = ""
 
-while(bot_message != "Bye" or bot_message!='thanks' or bot_message != "GoodBye, have a great day!"):
+while(bot_message != "GoodBye" or bot_message != 'GoodBye, have a great day!' or message != "Bye" or message!='thanks' or message!='thank you'):
     with sr.Microphone(device_index=0) as source:
         print("MiWo is Listening...")
         message = rec.listen(source)

@@ -12,7 +12,10 @@ rules:
   - intent: bot_challenge
   - action: utter_iamabot
 
-
+- rule: Search the file when user gives input
+  steps:
+  - intent: csv
+  - action: action_csv
 
 #form if required
 #- rule: activate subscribe form

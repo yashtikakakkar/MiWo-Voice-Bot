@@ -103,6 +103,14 @@ nlu:
     - South West Delhi
     - West Delhi
 
+- intent: csv
+  examples: |
+    - file
+    - q_csv
+    - TEST
+    - test
+    - Test    
+
 - intent: schemes
   examples: |
     - 3
@@ -247,6 +255,7 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+    
      
      
      

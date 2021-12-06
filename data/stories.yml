@@ -12,6 +12,16 @@ stories:
   - action: utter_district
   - intent: district
   - action: utter_help
+
+#csv file NGOs
+- story: user query
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: csv
+  - action: action_csv
+  - intent: goodbye
+  - action: utter_goodbye
   
 - story: outside job search path
   steps:
@@ -182,7 +192,7 @@ stories:
   - intent: Delhi
   - action: utter_district
   - intent: district
-  - action: utter_law_maternity 
+  - action: utter_help
   - intent: goodbye
   - action: utter_goodbye
   

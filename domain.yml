@@ -22,10 +22,11 @@ intents:
   - AABY
   - RSBY
   - MGBBY
+  - csv
 
 responses:
   utter_greet:
-  - text: "What's your issue? : 1 - Searching for a job or 2 - Problems in current job or 3 - Know about Government Schemes or 4 - Accommodation or other. Please select one of the four options." 
+  - text: "What's your issue? : 1 - Searching for a job - or 2 - Problems in current job - or 3 - Know about Government Schemes - or 4 - Accommodation or other. Please select one of the four options." 
   
   utter_searching_for_job:
   - text: "Which area are you located in? - Delhi or Outside Delhi?"
@@ -52,31 +53,31 @@ responses:
   - text: "To be eligible for Rashtriya Swasthya Bima Yojana, you should be Below Poverty Line and your family unit should be of 5 members. You should also be a part of an occupational or vocational group. You'll be eligible for a smart card for identification purposes, a thirty thousand rupees per annum insurance for your family, hospitalization expenses for common ailments and transportation fees ranging from hundred rupees to a thousand rupees. These are subject to change according to the respective state government policies. Are you interested in this scheme?"
 
   utter_scheme_help:
-  - text: "Please call the national helpline number xxxxxx for further steps."
+  - text: "Please call the national helpline number 956873456 for further steps."
 
   utter_law_maternity:
   - text: "This issue may come under the Maternity Benefit Act. You may contact this helpline number for women for further help. Please call 1091."
 
   utter_law_compensation:
-  - text: "This issue may come under the Employee Compensation Act. Please contact the following helpline number for assistance: "
+  - text: "This issue may come under the Employee Compensation Act. Please contact the following helpline number for assistance: 956873456"
 
   utter_law_remuneration:
-  - text: "This issue may come under the Equal Remuneration Act. Please contact the following helpline number for assistance: "
+  - text: "This issue may come under the Equal Remuneration Act. Please contact the following helpline number for assistance: 956873456"
 
   utter_law_wages:
-  - text: "This issue may come under the Payment of Wages Act. Please contact the following helpline number for assistance: "
+  - text: "This issue may come under the Payment of Wages Act. Please contact the following helpline number for assistance: 956873456"
 
   utter_law_minimum:
-  - text: "This issue may come under the Minimum Wages Act. Please contact the following helpline number for assistance: "
+  - text: "This issue may come under the Minimum Wages Act. Please contact the following helpline number for assistance: 956873456"
 
   utter_acco_other:
-  - text: "Which area are you located in?"
+  - text: "In which area are you looking for accommodation? - Delhi or Outside Delhi?"
   
   utter_help:
-  - text: "Please contact to the following helpline number - 956873456, 469773463, 0115436, 011254564: they'll help you out!" 
+  - text: "Please contact to the following helpline number - 956873456, 469773463: they'll help you out!" 
   
   utter_national_help: 
-  - text: "Please contact to the following national helpline number - 956873456, 469773463, 0115436, 011254564: they'll help you out!" 
+  - text: "Please contact to the following national helpline number - 956873456, 469773463: they'll help you out!" 
   
   utter_did_that_help:
   - text: "Did that help you?"
@@ -114,7 +115,9 @@ slots:
 #  name:
 #    type: any
 
-#actions:
+
+actions:
+  - action_csv 
 #- '...'
 #- utter_greet
 #- utter_subscribed
