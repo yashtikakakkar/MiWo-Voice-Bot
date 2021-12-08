@@ -47,7 +47,36 @@ nlu:
     - I am having some problems in my current organization
     - i have issues with my employer
     - I am not getting my salary
+
+- intent: schemes
+  examples: |
+    - 3
+    - three
+    - option 3
+    - third one
+    - third
+    - third option
+    - government schemes
+    - schemes
+    - I want to know about government schemes
+    - Tell me about some government schemes
   
+- intent: acco_other
+  examples: |
+    - 4
+    - four
+    - option 4
+    - fourth one
+    - fourth
+    - fourth option
+    - other
+    - others
+    - accommodation
+    - I am in search of home
+    - I need a home to live  
+    - none 
+    - other problem   
+
 - intent: Delhi
   examples: |
     - Delhi
@@ -92,79 +121,25 @@ nlu:
     
 - intent: district
   examples: |
-    - [district]{"entity":"column","value":"district"}
-    - [district]{"entity":"column","value":"district"} Delhi
-#    - New Delhi
-#    - Central Delhi
-#    - East Delhi
-#    - North Delhi
-#    - North East Delhi
-#    - North West Delhi
-#    - South Delhi
-#    - South East Delhi
-#    - South West Delhi
-#    - West Delhi
+    - New Delhi
+    - Central Delhi
+    - East Delhi
+    - North Delhi
+    - North East Delhi
+    - North West Delhi
+    - South Delhi
+    - South East Delhi
+    - South West Delhi
+    - West Delhi
+    - Shahadra district
+#    - [district]{"entity":"column","value":"district"}
+#    - [district]{"entity":"column","value":"district"} Delhi
 
 #- intent: csv
 #  examples: |
 #   - file
 #   - test
-#   - Test    
-
-- intent: schemes
-  examples: |
-    - 3
-    - three
-    - option 3
-    - third one
-    - third
-    - third option
-    - government schemes
-    - schemes
-    - I want to know about government schemes
-    - Tell me about some government schemes
-
-- intent: IGNOAP
-  examples: |
-    - Indira Gandhi
-    - Indira Gandhi National Old Age Pension Scheme
-    - Old Age Pension
-    - National Old Age Pension
-
-- intent: AABY
-  examples: |
-    - Aam Aadmi Bima Yojana
-    - Aam Aadmi Yojana
-    - Aam Aadmi
-
-- intent: RSBY
-  examples: |
-    - Rashtriya Swasthya Bima Yojana
-    - Rashtriya Swasthya
-    - Swasthya Yojana
-    - Swasthya Bima
-
-- intent: MGBBY
-  examples: |
-    - Mahatma Gandhi Bunkar Bima Yojana
-    - Mahatma Gandhi Yojana
-    - Bunkar Bima Yojana
-    - Bunkar Yojana
-
-- intent: acco_other
-  examples: |
-    - 4
-    - four
-    - option 4
-    - fourth one
-    - fourth
-    - fourth option
-    - other
-    - accommodation
-    - I am in search of home
-    - I need a home to live  
-    - none 
-    - other problem   
+#   - Test   
 
 - intent: law_maternity
   examples: |
@@ -208,7 +183,41 @@ nlu:
     - We are getting less pay than the rate in market
     - Employer is not paying according to the rate
     - Employer is not paying appropriate salary according to rate
-     
+
+- intent: law_interstate_migrant
+  examples: |
+    - I am a migrant worker
+    - I have migrated from
+    - I came here from other state
+    - I am not from this state
+  
+- intent: IGNOAP
+  examples: |
+    - Indira Gandhi
+    - Indira Gandhi National Old Age Pension Scheme
+    - Old Age Pension
+    - National Old Age Pension
+
+- intent: AABY
+  examples: |
+    - Aam Aadmi Beema Yojana
+    - Aam Aadmi Yojana
+    - Aam Aadmi
+
+- intent: RSBY
+  examples: |
+    - Rashtriya Swasthya Beema Yojana
+    - Rashtriya Swasthya
+    - Swasthya Yojana
+    - Swasthya Bima
+
+- intent: MGBBY
+  examples: |
+    - Mahatma Gandhi Bunkar Beema Yojana
+    - Mahatma Gandhi Yojana
+    - Bunkar Bima Yojana
+    - Bunkar Yojana
+
 - intent: goodbye
   examples: |
     - good afternoon

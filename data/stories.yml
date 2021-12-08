@@ -14,14 +14,14 @@ stories:
   - action: utter_help
 
 #csv file NGOs
-- story: user query
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: csv
-  - action: action_csv
-  - intent: goodbye
-  - action: utter_goodbye
+#- story: user query
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: csv
+#  - action: action_csv
+#  - intent: goodbye
+#  - action: utter_goodbye
   
 - story: outside job search path
   steps:
@@ -84,6 +84,17 @@ stories:
   - action: utter_problem_in_current_job 
   - intent: law_minimum
   - action: utter_law_minimum
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: problem in job path interstate migrant
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: problem_in_current_job
+  - action: utter_problem_in_current_job 
+  - intent: law_interstate_migrant
+  - action: utter_interstate_migrant
   - intent: goodbye
   - action: utter_goodbye
 

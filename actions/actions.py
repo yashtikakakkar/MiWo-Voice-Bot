@@ -4,6 +4,8 @@
 # See this guide on how to implement these action:
 # https://rasa.com/docs/rasa/core/actions/#custom-actions/
 
+
+""" 
 from typing import Any, Text, Dict, List, Union
 
 from rasa_sdk import Action, Tracker
@@ -12,6 +14,8 @@ from rasa_sdk.executor import CollectingDispatcher
 from typing import Any, Text, Dict, List
 import csv
 import pandas as pd
+
+
 
 class ActionReadCSV(Action):
         def name(self) -> Text:
@@ -24,9 +28,7 @@ class ActionReadCSV(Action):
     
             for i, j in df.iterrows():
                 dispatcher.utter_message(text=(str(j['ID']) + " " + str(j['Title'])))
-            return []
-
-"""           
+            return []          
 
 class ActionHelloWorld(Action):
 

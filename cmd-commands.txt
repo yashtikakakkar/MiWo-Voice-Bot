@@ -10,26 +10,23 @@ Anaconda Prompt -> Run as Administrator
 
 (rasa x) 
 
-OPEN ANOTHER TERMINAL - 
-
+(not required) OPEN ANOTHER TERMINAL - 
 1. to 4. same as above
 5. (rasabot) (base) C:\Users\Sonalika\Documents\A-RASA\MiWo>python -m rasa_sdk --actions actions
 
 
 OPEN ANOTHER TERMINAL - 
-
 1. to 4. same as above
 5. (rasabot) (base) C:\Users\Sonalika\Documents\A-RASA\MiWo>python Voice_bot.py run
 
 
 OPEN ANOTHER TERMINAL - 
-
 1. to 4. same as above
 5. (rasabot) (base) C:\Users\Sonalika\Documents\A-RASA\MiWo>docker run -p 8000:8000 rasa/duckling
 
 
 
-
+(not required) 
 How to extract the information from the excel sheet and display in the output
 
 Add the given data to nlu.md to accept what user says,
@@ -80,10 +77,6 @@ Also add this action name to domain file to register it,
 
 actions:
 - action_fetch_data
-
-
-
-
 
 pip install SpeechRecognition PyAudio
 pip install gtts
