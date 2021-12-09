@@ -38,8 +38,9 @@ with sr.Microphone(device_index=0) as source:
 
 
 bot_message = ""
+message = ""
 
-while(bot_message != "GoodBye" or bot_message != 'GoodBye, have a great day!' or message != "Bye" or message!='thanks' or message!='thank you'):
+while(bot_message != "Thank you for using my services, have a great day!" or message != "Bye" or message!="thanks" or message!="thank you"  or message != "bye" or message!="thankyou"  or message!="Thankyou"):
     with sr.Microphone(device_index=0) as source:
         print("MiWo is Listening...")
         message = rec.listen(source)
@@ -56,7 +57,8 @@ while(bot_message != "GoodBye" or bot_message != 'GoodBye, have a great day!' or
             converter.runAndWait() 
 
     except Exception as e:
-        converter.say(e)
+        print("Sorry, I could not recognize your voice")    # In case of  voice not recognized  clearly
+        converter.say("Sorry, I could not recognize your voice")
         converter.runAndWait()
 
 

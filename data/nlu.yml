@@ -30,6 +30,9 @@ nlu:
     - first option
     - I want a job
     - I need a job
+    - searching for a job
+    - job search
+    - search job
     - can you find a job?
     - I am in search for a job
     - Please find me a job
@@ -44,6 +47,9 @@ nlu:
     - second
     - second option
     - I am not happy with my job
+    - problems
+    - problems in job
+    - problems in current job
     - I am having some problems in my current organization
     - i have issues with my employer
     - I am not getting my salary
@@ -70,8 +76,10 @@ nlu:
     - fourth
     - fourth option
     - other
+    - Other
     - others
     - accommodation
+    - Accommodation
     - I am in search of home
     - I need a home to live  
     - none 
@@ -81,10 +89,13 @@ nlu:
   examples: |
     - Delhi
     - Dilli
+    - delhi
+    - dilli
     
 - intent: Outside_Delhi 
   examples: |
     - Outside
+    - outside
     - Outside Delhi
     - Bangalore
     - UP
@@ -190,33 +201,53 @@ nlu:
     - I have migrated from
     - I came here from other state
     - I am not from this state
+    - I am migrant. I came here through a contractor
+    - I am migrant. I came here through a contractor, but now they are not fulfilling their promises.
   
 - intent: IGNOAP
   examples: |
-    - Indira Gandhi
-    - Indira Gandhi National Old Age Pension Scheme
-    - Old Age Pension
-    - National Old Age Pension
+    - indira gandhi
+    - indira gandhi national old age pension scheme
+    - old age pension
+    - pension
+    - national old age pension
 
 - intent: AABY
   examples: |
-    - Aam Aadmi Beema Yojana
-    - Aam Aadmi Yojana
-    - Aam Aadmi
+    - aam aadmi bima yojana
+    - aam aadmi yojana
+    - aam aadmi
+    - aam aadmi bima yojna
+    - aam aadmi yojna
 
 - intent: RSBY
   examples: |
-    - Rashtriya Swasthya Beema Yojana
-    - Rashtriya Swasthya
-    - Swasthya Yojana
-    - Swasthya Bima
+    - rashtriya swasthya bima yojana
+    - rashtriya swasthya
+    - swasthya yojana
+    - swasthya bima
 
 - intent: MGBBY
   examples: |
-    - Mahatma Gandhi Bunkar Beema Yojana
-    - Mahatma Gandhi Yojana
-    - Bunkar Bima Yojana
-    - Bunkar Yojana
+    - mahatma gandhi bunkar bima yojana
+    - mahatma gandhi yojana
+    - bunkar bima yojana
+    - bunkar yojana
+    - bunkar
+
+- intent: go_back
+  examples: |
+    - go back
+    - please go back 
+    - go back to starting
+    - repeat
+    - please repeat
+    - please go to first question
+    - go to first question
+    - ask it again
+    - start again
+    - sorry 
+    - please go back to first question   
 
 - intent: goodbye
   examples: |

@@ -2,6 +2,11 @@ version: "2.0"
 
 rules:
 
+- rule: Go Back if user says so
+  steps:
+  - intent: go_back
+  - action: utter_greet
+
 - rule: Say goodbye anytime the user says goodbye
   steps:
   - intent: goodbye

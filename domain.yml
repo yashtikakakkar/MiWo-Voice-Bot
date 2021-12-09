@@ -22,6 +22,7 @@ intents:
   - AABY
   - RSBY
   - MGBBY
+  - go_back
 
 responses:
   utter_greet:
@@ -88,7 +89,7 @@ responses:
   - text: "Great, carry on!"
 
   utter_goodbye:
-  - text: "GoodBye, have a great day!"
+  - text: "Thank you for using my services, have a great day!"
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
